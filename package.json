@@ -44,8 +44,7 @@
     "test": "jest  --runInBand ",
     "gen-docs": "typedoc --out dist/docs && cpy ./banner.png ./dist/docs",
     "usage_example": "cd examples/usage  && ts-node index.ts",
-    "prepack": "cp -r ./dist/*.{js,ts,wasm} . && cp -r ./dist/helpers .",
-    "postpack": "git clean -fd"
+    "prepare": "cp -r ./dist/*.{js,ts,wasm} . && cp -r ./dist/helpers ."
   },
   "author": "web-ifc",
   "files": [
