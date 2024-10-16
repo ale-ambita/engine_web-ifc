@@ -43,11 +43,11 @@
     "regression-update": "node --max-old-space-size=8192 ./tests/regression/regression.mjs update",
     "test": "jest  --runInBand ",
     "gen-docs": "typedoc --out dist/docs && cpy ./banner.png ./dist/docs",
-    "usage_example": "cd examples/usage  && ts-node index.ts"
+    "usage_example": "cd examples/usage  && ts-node index.ts",
+    "prepare": "cd dist && npm pack"
   },
   "author": "web-ifc",
   "files": [
-    "dist",
     "web-ifc.wasm",
     "web-ifc-mt.wasm",
     "web-ifc-node.wasm",
