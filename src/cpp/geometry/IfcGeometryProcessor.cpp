@@ -89,6 +89,9 @@ namespace webifc::geometry
         if (styledItem != styledItems.end())
         {
             auto items = styledItem->second;
+
+            std::reverse(items.begin(), items.end());
+
             for (auto item : items)
             {
                 styledItemColor = _geometryLoader.GetColor(item.second);

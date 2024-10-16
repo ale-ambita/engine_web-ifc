@@ -854,7 +854,7 @@ namespace webifc::geometry
 
   std::optional<glm::dvec4> IfcGeometryLoader::GetColor(uint32_t expressID) const
   {
-   spdlog::debug("[GetColor({})]",expressID);
+    spdlog::debug("[GetColor({})]",expressID);
     auto lineType = _loader.GetLineType(expressID);
     switch (lineType)
     {
@@ -862,6 +862,8 @@ namespace webifc::geometry
     {
       _loader.MoveToArgumentOffset(expressID, 0);
       auto ifcPresentationStyleSelects = _loader.GetSetArgument();
+
+      std::reverse(ifcPresentationStyleSelects.begin(), ifcPresentationStyleSelects.end());
 
       for (auto &styleSelect : ifcPresentationStyleSelects)
       {
@@ -3763,3 +3765,4 @@ IfcProfile IfcGeometryLoader::GetProfile(uint32_t expressID) const
   }
 
 }
+
