@@ -47,6 +47,7 @@
   },
   "author": "web-ifc",
   "files": [
+    "dist",
     "web-ifc.wasm",
     "web-ifc-mt.wasm",
     "web-ifc-node.wasm",
