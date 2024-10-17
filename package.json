@@ -58,7 +58,8 @@
     "ifc-schema.d.ts",
     "helpers/properties.d.ts",
     "helpers/log.d.ts",
-    "web-ifc.js"
+    "web-ifc.js",
+    "web-ifc-mt.js"
   ],
   "devDependencies": {
     "@types/jest": "^27.5.2",
